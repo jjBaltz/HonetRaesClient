@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function TicketsList() {
   const [tickets, setTickets] = useState([]);
-
+  console.log();
   useEffect(() => {
     getServiceTickets().then(setTickets);
   }, []);
